@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  XNTabBarController.swift
 //  XNTodayNews
 //
 //  Created by Dandre on 2018/6/6.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class XNTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,4 +16,3 @@ class ViewController: UIViewController {
     }
 
 }
-

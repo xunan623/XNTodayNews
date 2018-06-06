@@ -8,10 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		AF76B4B420C7B5310035EC7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF76B4B320C7B5310035EC7E /* AppDelegate.swift */; };
-		AF76B4B620C7B5310035EC7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF76B4B520C7B5310035EC7E /* ViewController.swift */; };
-		AF76B4B920C7B5310035EC7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF76B4B720C7B5310035EC7E /* Main.storyboard */; };
 		AF76B4BB20C7B5310035EC7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF76B4BA20C7B5310035EC7E /* Assets.xcassets */; };
 		AF76B4BE20C7B5310035EC7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF76B4BC20C7B5310035EC7E /* LaunchScreen.storyboard */; };
+		AF76B4E520C7C0910035EC7E /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF76B4E420C7C0910035EC7E /* Const.swift */; };
+		AF76B4F220C7C1F50035EC7E /* emoji_mapping.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF76B4E620C7C1F40035EC7E /* emoji_mapping.plist */; };
+		AF76B4F320C7C1F50035EC7E /* settingPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF76B4E720C7C1F40035EC7E /* settingPlist.plist */; };
+		AF76B4F420C7C1F50035EC7E /* activity_main_mahjong_start_guide.json in Resources */ = {isa = PBXBuildFile; fileRef = AF76B4E820C7C1F50035EC7E /* activity_main_mahjong_start_guide.json */; };
+		AF76B4F520C7C1F50035EC7E /* activity.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF76B4E920C7C1F50035EC7E /* activity.plist */; };
+		AF76B4F620C7C1F50035EC7E /* emoji_sort.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF76B4EA20C7C1F50035EC7E /* emoji_sort.plist */; };
+		AF76B4F720C7C1F50035EC7E /* shengxiao.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF76B4EB20C7C1F50035EC7E /* shengxiao.plist */; };
+		AF76B4F820C7C1F50035EC7E /* default_theme.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF76B4ED20C7C1F50035EC7E /* default_theme.plist */; };
+		AF76B4F920C7C1F50035EC7E /* night_theme.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF76B4EE20C7C1F50035EC7E /* night_theme.plist */; };
+		AF76B4FA20C7C1F50035EC7E /* activity2.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF76B4EF20C7C1F50035EC7E /* activity2.plist */; };
+		AF76B4FB20C7C1F50035EC7E /* emojis.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF76B4F020C7C1F50035EC7E /* emojis.plist */; };
+		AF76B4FC20C7C1F50035EC7E /* activity_main_head_white.json in Resources */ = {isa = PBXBuildFile; fileRef = AF76B4F120C7C1F50035EC7E /* activity_main_head_white.json */; };
+		AF76B50120C7C4EC0035EC7E /* XNTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF76B50020C7C4EC0035EC7E /* XNTabBarController.swift */; };
 		B792AE8637BED9B46667BAFC /* Pods_XNTodayNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1634F91034FDFFB6DD59DB69 /* Pods_XNTodayNews.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,11 +32,22 @@
 		AA5B4968AAD332914CB62668 /* Pods-XNTodayNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XNTodayNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-XNTodayNews/Pods-XNTodayNews.release.xcconfig"; sourceTree = "<group>"; };
 		AF76B4B020C7B5310035EC7E /* XNTodayNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XNTodayNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF76B4B320C7B5310035EC7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AF76B4B520C7B5310035EC7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AF76B4B820C7B5310035EC7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF76B4BA20C7B5310035EC7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF76B4BD20C7B5310035EC7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF76B4BF20C7B5310035EC7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF76B4E420C7C0910035EC7E /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		AF76B4E620C7C1F40035EC7E /* emoji_mapping.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = emoji_mapping.plist; sourceTree = "<group>"; };
+		AF76B4E720C7C1F40035EC7E /* settingPlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = settingPlist.plist; sourceTree = "<group>"; };
+		AF76B4E820C7C1F50035EC7E /* activity_main_mahjong_start_guide.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = activity_main_mahjong_start_guide.json; sourceTree = "<group>"; };
+		AF76B4E920C7C1F50035EC7E /* activity.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = activity.plist; sourceTree = "<group>"; };
+		AF76B4EA20C7C1F50035EC7E /* emoji_sort.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = emoji_sort.plist; sourceTree = "<group>"; };
+		AF76B4EB20C7C1F50035EC7E /* shengxiao.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = shengxiao.plist; sourceTree = "<group>"; };
+		AF76B4ED20C7C1F50035EC7E /* default_theme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = default_theme.plist; sourceTree = "<group>"; };
+		AF76B4EE20C7C1F50035EC7E /* night_theme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = night_theme.plist; sourceTree = "<group>"; };
+		AF76B4EF20C7C1F50035EC7E /* activity2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = activity2.plist; sourceTree = "<group>"; };
+		AF76B4F020C7C1F50035EC7E /* emojis.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = emojis.plist; sourceTree = "<group>"; };
+		AF76B4F120C7C1F50035EC7E /* activity_main_head_white.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = activity_main_head_white.json; sourceTree = "<group>"; };
+		AF76B50020C7C4EC0035EC7E /* XNTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XNTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,14 +100,65 @@
 		AF76B4B220C7B5310035EC7E /* XNTodayNews */ = {
 			isa = PBXGroup;
 			children = (
-				AF76B4B320C7B5310035EC7E /* AppDelegate.swift */,
-				AF76B4B520C7B5310035EC7E /* ViewController.swift */,
-				AF76B4B720C7B5310035EC7E /* Main.storyboard */,
+				AF76B4FD20C7C4250035EC7E /* Main */,
+				AF76B4E320C7C03F0035EC7E /* Others */,
 				AF76B4BA20C7B5310035EC7E /* Assets.xcassets */,
 				AF76B4BC20C7B5310035EC7E /* LaunchScreen.storyboard */,
 				AF76B4BF20C7B5310035EC7E /* Info.plist */,
 			);
 			path = XNTodayNews;
+			sourceTree = "<group>";
+		};
+		AF76B4E320C7C03F0035EC7E /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				AF76B4EC20C7C1F50035EC7E /* Theme */,
+				AF76B4F120C7C1F50035EC7E /* activity_main_head_white.json */,
+				AF76B4E820C7C1F50035EC7E /* activity_main_mahjong_start_guide.json */,
+				AF76B4E920C7C1F50035EC7E /* activity.plist */,
+				AF76B4EF20C7C1F50035EC7E /* activity2.plist */,
+				AF76B4E620C7C1F40035EC7E /* emoji_mapping.plist */,
+				AF76B4EA20C7C1F50035EC7E /* emoji_sort.plist */,
+				AF76B4F020C7C1F50035EC7E /* emojis.plist */,
+				AF76B4E720C7C1F40035EC7E /* settingPlist.plist */,
+				AF76B4EB20C7C1F50035EC7E /* shengxiao.plist */,
+				AF76B4E420C7C0910035EC7E /* Const.swift */,
+				AF76B4B320C7B5310035EC7E /* AppDelegate.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		AF76B4EC20C7C1F50035EC7E /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				AF76B4ED20C7C1F50035EC7E /* default_theme.plist */,
+				AF76B4EE20C7C1F50035EC7E /* night_theme.plist */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		AF76B4FD20C7C4250035EC7E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AF76B4FE20C7C4950035EC7E /* Controller */,
+				AF76B4FF20C7C4950035EC7E /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		AF76B4FE20C7C4950035EC7E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AF76B50020C7C4EC0035EC7E /* XNTabBarController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AF76B4FF20C7C4950035EC7E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +222,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF76B4FC20C7C1F50035EC7E /* activity_main_head_white.json in Resources */,
 				AF76B4BE20C7B5310035EC7E /* LaunchScreen.storyboard in Resources */,
+				AF76B4F920C7C1F50035EC7E /* night_theme.plist in Resources */,
+				AF76B4F520C7C1F50035EC7E /* activity.plist in Resources */,
+				AF76B4F620C7C1F50035EC7E /* emoji_sort.plist in Resources */,
+				AF76B4F820C7C1F50035EC7E /* default_theme.plist in Resources */,
+				AF76B4F420C7C1F50035EC7E /* activity_main_mahjong_start_guide.json in Resources */,
+				AF76B4F220C7C1F50035EC7E /* emoji_mapping.plist in Resources */,
+				AF76B4FA20C7C1F50035EC7E /* activity2.plist in Resources */,
+				AF76B4F320C7C1F50035EC7E /* settingPlist.plist in Resources */,
+				AF76B4FB20C7C1F50035EC7E /* emojis.plist in Resources */,
 				AF76B4BB20C7B5310035EC7E /* Assets.xcassets in Resources */,
-				AF76B4B920C7B5310035EC7E /* Main.storyboard in Resources */,
+				AF76B4F720C7C1F50035EC7E /* shengxiao.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,10 +282,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-XNTodayNews/Pods-XNTodayNews-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftTheme/SwiftTheme.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftTheme.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -216,22 +301,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF76B4B620C7B5310035EC7E /* ViewController.swift in Sources */,
+				AF76B50120C7C4EC0035EC7E /* XNTabBarController.swift in Sources */,
 				AF76B4B420C7B5310035EC7E /* AppDelegate.swift in Sources */,
+				AF76B4E520C7C0910035EC7E /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AF76B4B720C7B5310035EC7E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AF76B4B820C7B5310035EC7E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AF76B4BC20C7B5310035EC7E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
