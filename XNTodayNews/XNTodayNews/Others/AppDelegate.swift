@@ -20,8 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         ThemeManager.setTheme(plistName: UserDefaults.standard.bool(forKey: isNight) ? "night_theme" : "default_theme" , path: .mainBundle)
         
         window = UIWindow(frame: UIScreen.main.bounds)
+        window?.backgroundColor = UIColor.white
         window?.rootViewController = XNTabBarController()
-        
+        window?.makeKeyAndVisible()
         return true
     }
 
