@@ -23,6 +23,9 @@
 		AF76B4FB20C7C1F50035EC7E /* emojis.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF76B4F020C7C1F50035EC7E /* emojis.plist */; };
 		AF76B4FC20C7C1F50035EC7E /* activity_main_head_white.json in Resources */ = {isa = PBXBuildFile; fileRef = AF76B4F120C7C1F50035EC7E /* activity_main_head_white.json */; };
 		AF76B50120C7C4EC0035EC7E /* XNTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF76B50020C7C4EC0035EC7E /* XNTabBarController.swift */; };
+		AF76B50320C7D6810035EC7E /* XNNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF76B50220C7D6810035EC7E /* XNNavigationController.swift */; };
+		AF76B50920C90B070035EC7E /* XNBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF76B50820C90B070035EC7E /* XNBaseViewController.swift */; };
+		AF76B50B20C90B680035EC7E /* XNHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF76B50A20C90B680035EC7E /* XNHomeViewController.swift */; };
 		B792AE8637BED9B46667BAFC /* Pods_XNTodayNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1634F91034FDFFB6DD59DB69 /* Pods_XNTodayNews.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +51,9 @@
 		AF76B4F020C7C1F50035EC7E /* emojis.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = emojis.plist; sourceTree = "<group>"; };
 		AF76B4F120C7C1F50035EC7E /* activity_main_head_white.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = activity_main_head_white.json; sourceTree = "<group>"; };
 		AF76B50020C7C4EC0035EC7E /* XNTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XNTabBarController.swift; sourceTree = "<group>"; };
+		AF76B50220C7D6810035EC7E /* XNNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XNNavigationController.swift; sourceTree = "<group>"; };
+		AF76B50820C90B070035EC7E /* XNBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XNBaseViewController.swift; sourceTree = "<group>"; };
+		AF76B50A20C90B680035EC7E /* XNHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XNHomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,7 @@
 		AF76B4B220C7B5310035EC7E /* XNTodayNews */ = {
 			isa = PBXGroup;
 			children = (
+				AF76B50420C90AD40035EC7E /* Home */,
 				AF76B4FD20C7C4250035EC7E /* Main */,
 				AF76B4E320C7C03F0035EC7E /* Others */,
 				AF76B4BA20C7B5310035EC7E /* Assets.xcassets */,
@@ -150,11 +157,45 @@
 			isa = PBXGroup;
 			children = (
 				AF76B50020C7C4EC0035EC7E /* XNTabBarController.swift */,
+				AF76B50220C7D6810035EC7E /* XNNavigationController.swift */,
+				AF76B50820C90B070035EC7E /* XNBaseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
 		AF76B4FF20C7C4950035EC7E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AF76B50420C90AD40035EC7E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AF76B50520C90AD40035EC7E /* Controller */,
+				AF76B50620C90AD40035EC7E /* Model */,
+				AF76B50720C90AD40035EC7E /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AF76B50520C90AD40035EC7E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AF76B50A20C90B680035EC7E /* XNHomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AF76B50620C90AD40035EC7E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AF76B50720C90AD40035EC7E /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -282,11 +323,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-XNTodayNews/Pods-XNTodayNews-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SGPagingView/SGPagingView.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftTheme/SwiftTheme.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SGPagingView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftTheme.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,8 +345,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF76B50120C7C4EC0035EC7E /* XNTabBarController.swift in Sources */,
+				AF76B50920C90B070035EC7E /* XNBaseViewController.swift in Sources */,
+				AF76B50320C7D6810035EC7E /* XNNavigationController.swift in Sources */,
 				AF76B4B420C7B5310035EC7E /* AppDelegate.swift in Sources */,
 				AF76B4E520C7C0910035EC7E /* Const.swift in Sources */,
+				AF76B50B20C90B680035EC7E /* XNHomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,11 +490,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WT44JA8HJ5;
 				INFOPLIST_FILE = XNTodayNews/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xunan.XNTodayNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -465,11 +508,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WT44JA8HJ5;
 				INFOPLIST_FILE = XNTodayNews/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xunan.XNTodayNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
